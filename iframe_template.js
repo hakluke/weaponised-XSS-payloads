@@ -1,18 +1,11 @@
 /*
-After releasing this repository, I was contacted by Justin Gardner (@Rhynorater), an excellent security
-researcher and bug bounty hunter. He shared a different technique with me which allows an XSS to bypass CSRF by injecting an iframe into the page and submitting the sensitive form within the iframe.
+After releasing this repository, I was contacted by Justin Gardner (@Rhynorater), an excellent security researcher and bug bounty hunter. He shared a different technique with me which allows an XSS to bypass CSRF by injecting an iframe into the page and submitting the sensitive form within the iframe.
 
-This is an excellent technique, and simplifies the process of creating custom payloads for many web applications. A template for this technique can be seen below, the script will create an iframe which lo
-ads https://example.com/sensitive/action.php. It will then fill out the NewPassword and ConfirmNewPass
-word text boxes with the value "1337H4x0rz!!!" and click the submit button.
+This is an excellent technique, and simplifies the process of creating custom payloads for many web applications. A template for this technique can be seen below, the script will create an iframe which loads https://example.com/sensitive/action.php. It will then fill out the NewPassword and ConfirmNewPassword text boxes with the value "1337H4x0rz!!!" and click the submit button.
 
-With this technique, there is no need to extract the CSRF token because it's already embedded in the f
-orm.
+With this technique, there is no need to extract the CSRF token because it's already embedded in the form.
 
-It is important to know how both of these techniques work. AJAX requests can be the only option someti
-mes, like when we're dealing with an API that isn't UI accessible. It can also be more reliable if the
- victim has a slow internet connection. On the other hand, this iframe method is a much simpler payloa
-d, and makes it easy to rapidly develop a PoC for a custom application.
+It is important to know how both of these techniques work. AJAX requests can be the only option sometimes, like when we're dealing with an API that isn't UI accessible. It can also be more reliable if the victim has a slow internet connection. On the other hand, this iframe method is a much simpler payload, and makes it easy to rapidly develop a PoC for a custom application.
 */
 
 
