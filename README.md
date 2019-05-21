@@ -2,7 +2,7 @@
 _XSS payloads designed to turn alert(1) into P1._
 
 ## The Blog Post
-This repo was released alongside a blogpost titled "How to Upgrade Your XSS Bug from Medium to Critical" https://medium.com/@hakluke/upgrade-xss-from-medium-to-critical-cb96597b6cc4
+This repo was released alongside a blogpost titled "How to Upgrade Your XSS Bugs from Medium to Critical" https://medium.com/@hakluke/upgrade-xss-from-medium-to-critical-cb96597b6cc4
 
 ## What is this?
 
