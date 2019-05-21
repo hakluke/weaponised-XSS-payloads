@@ -22,6 +22,13 @@ The simplest way to use these payloads is to host them somewhere and load them i
 
 Alternatively, depending on the context and length of the payload, it can sometimes be [minified](https://javascript-minifier.com/), [encoded](https://eve.gd/2007/05/23/string-fromcharcode-encoder/) and then just included directly into the request.
 
+In order to host the JavaScript file, you may need to set the Content-Type to `application/javascript`. To achieve this with PHP, you can simply prepend this line to the top of any of the payloads, save it as a .php file and host it on your PHP-enabled webserver:
+
+```
+<?php header("Content-Type: application/javascript"); ?>
+```
+
+
 ## Credits
 
 [This article](https://www.shift8web.ca/2018/01/craft-xss-payload-create-admin-user-in-wordpress-user/) from Shift8 is what inspired me to make this repo. The JS in the article has a couple of minor typos but the concepts are spot on.
