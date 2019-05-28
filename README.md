@@ -10,7 +10,7 @@ In this repository you will find a bunch of JavaScript files which can be loaded
 
 This is perfect for beefing up the severity of a pentest or bug bounty report by demonstrating real security impact.
 
-Currently, there are only two payloads, one for adding an admin user in Wordpress, and one for adding an admin user in Drupal. There are plenty more to come, if you can help out - pull requests are welcome!
+Payloads are slowly being added either as I have time. There are plenty more to come, if you can help out - pull requests are welcome! If you're looking for inspiration on what to create - check the "issues" tab on this repo.
 
 ## How To
 
