@@ -5,7 +5,7 @@ you can inject this snippet to stage a more complex payload from an external res
 
 The external JS payload needs to be inside a function called "a" like this:
 
-var a=function(){
+function a(){
   // payload here
   }
 
